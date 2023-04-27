@@ -27,14 +27,14 @@ cloudinary.config({
 });
 
 /*  route to set new value to interval  */
-app.get("/set_interval", (req, res) => {
+app.get("https://mr-proctor.onrender.com/set_interval", (req, res) => {
     interval = req.query.interval * 60 * 1000;
     console.log("interval setted to " + interval + " miliseconds");
     res.send({ success: true }).status(200).end();
 });
 
 /*  route for creating new User */
-app.post("/createUser", async (req, res) => {
+app.post("https://mr-proctor.onrender.com/createUser", async (req, res) => {
     try {
         const id = uniqueId.time();
 
@@ -61,7 +61,7 @@ app.post("/createUser", async (req, res) => {
 });
 
 /*  route for uploading user images to cloudinary and then storing url to mongoDB */
-app.post("/upload-image", (req, res) => {
+app.post("https://mr-proctor.onrender.com/upload-image", (req, res) => {
     const imageData = req.body.image;
     const userid = req.body.userid;
 
@@ -101,13 +101,13 @@ app.post("/upload-image", (req, res) => {
 });
 
 /*  route to get all users data */
-app.get("/retrieve-data", async (_req, res) => {
+app.get("https://mr-proctor.onrender.com/retrieve-data", async (_req, res) => {
     const data = await UserDataSchema.find({});
 
     res.json({ data: data }).status(200).end();
 });
 
-app.get("/cleardb", async (_req, res) => {
+app.get("https://mr-proctor.onrender.com/cleardb", async (_req, res) => {
     const data = await UserDataSchema.deleteMany();
     res.json({ message: data }).status(200).end();
 });
