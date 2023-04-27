@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./icons/icon2.png">
+    <title>Mr. Proctor - Online Test Proctoring Extension</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+
+    <div class="form" >
+        <img class="center" src="./logo.png" alt="icon" height="60" />
+        <form method="post" id="form">
+            <div class="row" >
+                <div class="col">
+                    <label for="f_name">First name:</label>
+                    <input class="form-control" type="text" id="f_name" name="f_name" placeholder="Enter your First Name">
+                </div>
+                <div class="col">
+                    <label for="l_name">Last name:</label>
+                    <input class="form-control" type="text" id="l_name" name="l_name" placeholder="Enter your Last Name">
+                </div>
+                <div class="col">
+                    <label for="email"> Email:</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Enter your Email ID">
+                </div>
+
+                <div class="col">
+                    <label for="invitation"> Test invitation code:</label>
+                    <input class="form-control" type="text" id="test_invitation" name="test_invitation" placeholder="Enter test invitation code">
+
+                </div>
+            </div>
+            <button class="btn" type="submit">Start Test</button>
+        </form>
+      </div>
+      <script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>
