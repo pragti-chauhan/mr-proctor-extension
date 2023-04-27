@@ -21,15 +21,20 @@ Mr. Proctor is a Chrome extension that operates on assessment websites, activati
 
 ### Frontend - Chrome Extension
 - Allows users to input their details through a form like their name, email, and test invitation code.
+<img alt="extension" src="https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/images/extension%20bar.png" width="300" height="400" />
+<img alt="form" src="https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/images/popup%20form.png" width="300" height="400" />
 - Upon clicking the &quot;Start Test&quot; button, the user is redirected to the test page, while the user's information is sent to the backend server.
+<img alt="user-details" src="https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/images/user%20details.png" width="300" height="400" />
 - Performs audio and video requirement checks and displays the candidate's live webcam feed on the page.
 - Also detects whether user has kept multiple tabs open.
+<img alt="test-page" src="https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/images/test%20redirect.png" width="700" height="500" />
 - Sends images of the user from the browser to the server at configurable intervals.
 
 ### Backend - [Mr. Proctor Backend](https://github.com/pragti-chauhan/mr-proctor-backend)
 - A backend API to store all user information and images.
 - Images are stored in on cloud data storage `cloudinary storage`
 - Images are stored along with timestamps.
+<img alt="dashboard" src="https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/images/dashboard.png" width="700" height="500" />
 - Handle Set Interval Route
 - Admin Dashboard is set up on [Render](https://mr-proctor.onrender.com/)
 
