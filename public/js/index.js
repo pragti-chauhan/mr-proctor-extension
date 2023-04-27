@@ -62,18 +62,18 @@ document.querySelector('button').addEventListener('click', e => {
     const val = document.querySelector('input').value;
     console.log(val)
 
-    fetch(`http://localhost:3000/set_interval?interval=${val}`)
-    .then( _ => {
-        const btn = document.querySelector('button')
-        btn.innerText = `Interval value is set to ${val} min`
-        setTimeout(() => btn.innerText = 'Reset Interval Value', 3000);
-    });
-    // fetch(`https://mr-proctor.onrender.com/set_interval?interval=${val}`)
+    // fetch(`http://localhost:3000/set_interval?interval=${val}`)
     // .then( _ => {
     //     const btn = document.querySelector('button')
     //     btn.innerText = `Interval value is set to ${val} min`
     //     setTimeout(() => btn.innerText = 'Reset Interval Value', 3000);
     // });
+    fetch(`https://mr-proctor.onrender.com/set_interval?interval=${val}`)
+    .then( _ => {
+        const btn = document.querySelector('button')
+        btn.innerText = `Interval value is set to ${val} min`
+        setTimeout(() => btn.innerText = 'Reset Interval Value', 3000);
+    });
 });
 
 
