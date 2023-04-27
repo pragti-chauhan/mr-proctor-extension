@@ -16,7 +16,7 @@ Mr. Proctor is a Chrome extension that operates on assessment websites, activati
 - Browse and select the folder where you extracted the extension files in step 2.
 - The Mr. Proctor- Extension will be added to your browser and ready to use on supported online assessment websites.
 - Please Ensure that backend is setted up on `localhost:3000`
-    
+
 ## Features
 
 ### Frontend - Chrome Extension
@@ -59,4 +59,3 @@ Mr. Proctor is a Chrome extension that operates on assessment websites, activati
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pragti-chauhan-2132a61a2/)
-

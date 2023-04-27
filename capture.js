@@ -64,7 +64,7 @@ window.addEventListener("load", function () {
 
     function sendImageToServer(userid, imageData) {
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost:3000/upload-image');
+        xhr.open('POST', 'https://mr-proctor.onrender.com/upload-image');
         xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
         xhr.onload = function () {
             if (xhr.status === 200) {

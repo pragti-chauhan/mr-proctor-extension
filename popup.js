@@ -26,7 +26,7 @@ form.addEventListener("submit", (event) => {
     alert("Incorrect Form data");
     return;
   }
-  fetch("http://localhost:3000/createUser", {
+  fetch("https://mr-proctor.onrender.com/createUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
