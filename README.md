@@ -1,5 +1,6 @@
 
 # Mr. Proctor - Online Test Proctoring Extension
+![Logo](https://github.com/pragti-chauhan/mr-proctor-extension/blob/main/icons/icon3.png)
 
 ## About
 Mr. Proctor is a Chrome extension that operates on assessment websites, activating when a user opens a test page. It opens a form for the user to enter their details and redirects to the test page. The extension performs audio-video check, and initiates image proctoring, sending images to the server as per the interval set(configurable). It also comes with an Admin Dashboard which displays user's information along with stored images.
